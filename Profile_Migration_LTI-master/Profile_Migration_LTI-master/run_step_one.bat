@@ -1,0 +1,2 @@
+SCHTASKS /CREATE /SC ONLOGON /RU BUILTIN\Users /TN "RUN\Con_Azure" /RL HIGHEST /TR "C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe -ExecutionPolicy Unrestricted -File C:\Users\CurrentUser\Desktop\connect_azure.ps1"
+powershell.exe -ExecutionPolicy remotesigned C:\Users\CurrentUser\Desktop\chg_pass.ps1
